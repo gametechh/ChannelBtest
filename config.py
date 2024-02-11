@@ -10,22 +10,22 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6950294857:AAHuoGWKt7r6R4qcGu2CNP8Ha8jSP9jBrmU")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6641862993:AAHZTxWa6g520aJe_BI7hiAFnzHz13IheCA")
 
 #Your API ID from my.telegram.org
-APP_ID = int(os.environ.get("APP_ID", "7685644"))
+APP_ID = int(os.environ.get("APP_ID", "24660542"))
 
 #Your API Hash from my.telegram.org
-API_HASH = os.environ.get("API_HASH", "a713f30f5a21716e6bff334e8ac19b17")
+API_HASH = os.environ.get("API_HASH", "e4cf6720d2b7f7062f9c52abb40a50b7")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001862263552"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002098195342"))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "1854576276"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "1871123020"))
 
 #Port
-PORT = os.environ.get("PORT", "8220")
+PORT = os.environ.get("PORT", "9807")
 
 #Database 
 DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://nas20221996:nayaungsoe14@cluster0.pgedpqc.mongodb.net/?retryWrites=true&w=majority")
@@ -40,7 +40,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nရုပ်ရှင်များပို့ပေးတဲ့ Bot ဖြစ်ပါတယ်😁😁")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "1854576276 1457995605").split()):
+    for x in (os.environ.get("ADMINS", "1854576276 1871123020 6426107357").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
